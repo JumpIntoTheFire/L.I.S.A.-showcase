@@ -4,6 +4,8 @@
 
 ![Phase](https://img.shields.io/badge/phase-2%2F5-00b4ff) ![License](https://img.shields.io/badge/license-MIT-00b4ff) ![Stack](https://img.shields.io/badge/stack-n8n%20%2B%20FastAPI%20%2B%20Ollama-00b4ff)
 
+![LISA Mission Control dashboard](docs/showcase/screenshots/dashboard.png)
+
 LISA orchestrates **21 specialist agents** — a 10-expert council, an ethics reviewer, a master coder, and 8 coding specialists — to analyse a problem, approve an approach, and deliver a design. All inference runs on a local 3B model (Ollama · `qwen2.5:3b`). Nothing leaves the machine.
 
 ---
