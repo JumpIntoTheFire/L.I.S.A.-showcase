@@ -2,7 +2,7 @@
 
 > A fully-local multi-agent AI system running on a single PC. Zero cloud, zero telemetry, zero API bills.
 
-![Phase](https://img.shields.io/badge/phase-2%2F5-00b4ff) ![License](https://img.shields.io/badge/license-MIT-00b4ff) ![Stack](https://img.shields.io/badge/stack-n8n%20%2B%20FastAPI%20%2B%20Ollama-00b4ff)
+![Phase](https://img.shields.io/badge/phase-3%2F5-00b4ff) ![License](https://img.shields.io/badge/license-MIT-00b4ff) ![Stack](https://img.shields.io/badge/stack-n8n%20%2B%20FastAPI%20%2B%20Ollama-00b4ff)
 
 ![LISA Mission Control dashboard](docs/showcase/screenshots/dashboard.png)
 
@@ -129,7 +129,7 @@ Tag hierarchy: `#behaviour/coding`, `#topic/climate_research`, `#confidence/high
 - **CPU-bound.** A full run is ~8–10 minutes on a 6-core machine. A GPU would cut this to under two minutes.
 - **6 GiB Ollama ceiling.** `qwen2.5:3b` Q4_K_M was chosen deliberately — larger models (e.g. `qwen3.5:9.7b`) OOM on this hardware.
 - **Single-user.** JWT auth exists, but the dashboard assumes one operator. No RBAC yet.
-- **Folder typo.** The repo is currently `LOCAL_INTELIGENCE_SYSTEM` (missing the second *l*). Rename to `LOCAL_INTELLIGENCE_SYSTEM_ARCHITECTURE` is scheduled after Phase 2 closes — moving it now would break the Docker bind mounts mid-run.
+- **Folder typo.** The repo is currently `LOCAL_INTELIGENCE_SYSTEM` (missing the second *l*). Rename scheduled after Phase 3 closes — moving it now would break Docker bind mounts mid-run.
 
 ---
 
@@ -138,9 +138,9 @@ Tag hierarchy: `#behaviour/coding`, `#topic/climate_research`, `#confidence/high
 | Phase | Name | Status |
 |---|---|---|
 | 1 | Core pipeline — one LIS that thinks end-to-end | ✅ Complete (`v0.1.0`) |
-| 2 | Hardening — auth, approval gates, persistence, memory | 🔧 In progress |
-| 3 | OpenClaw — multiple specialised LIS instances under one orchestrator | Planned |
-| 4 | Tool layer — agents can search, read, write, and act (with approval) | Planned |
+| 2 | Hardening — auth, approval gates, persistence, memory | ✅ Complete |
+| 3 | Multi-profile + tool layer — configurable pipelines, file/web tool use | 🔧 In progress |
+| 4 | Multi-instance orchestration — multiple LIS instances under one orchestrator | Planned |
 | 5 | Self-learning — pattern mining, skill promotion, cross-instance knowledge | Planned |
 
 ---
